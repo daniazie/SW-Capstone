@@ -10,7 +10,6 @@
 #SBATCH -o ./logs/slurm-%A.out
 #SBATCH -e ./error_logs/slurm-%A.out
 
-huggingface-cli login --token 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
 python3 sft_qwen.py
 
 exit

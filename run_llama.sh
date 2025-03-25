@@ -9,7 +9,6 @@
 #SBATCH -t 1-0
 #SBATCH -o ./logs/slurm-%A.out
 
-huggingface-cli login --token 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
 python3 sft_llama.py
 
 exit
