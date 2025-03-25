@@ -1,0 +1,502 @@
+[
+  {
+    "radiology_report": "A nodular density in the right parahilar region is observed, ruling out pulmonary neoplasia and more likely suggesting an infectious pneumonic process.",
+    "prediction": "There's a small lump in the right lung area near the center. It's not likely to be cancer, but more likely an infection like pneumonia.",
+    "target_summary": "A small lump is seen in the right side of the lung area, and it's not likely to be a lung tumor but more probably an infection in the lungs."
+  },
+  {
+    "radiology_report": "In the right humeral head, a rounded image of high density is observed, with characteristics suggestive of a benign bone island. No pathological infiltrates or consolidations are identified.",
+    "prediction": "There's a small, dense spot on the top of the right arm bone that looks like a harmless bone growth. Everything else looks normal.",
+    "target_summary": "In the upper arm bone on the right side, there is a round, high-density image that looks like a benign bone island. There are no signs of any abnormal tissue growth or infections."
+  },
+  {
+    "radiology_report": "No relevant findings.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "There are no significant issues found."
+  },
+  {
+    "radiology_report": "A non-contrast CT scan of the chest is performed and compared with a previous study dated [date]. The study is partially affected by respiratory motion. Compared to the previous study, there is marked radiological improvement, with only very faint areas of ground-glass opacity remaining in the lower lobes, significantly affected by respiratory motion. The rest of the lung parenchyma is normal. There are no changes in the cylindrical bronchiectasis in the right lower lobe. No pleural effusion is present. There are no significant mediastinal or axillary lymphadenopathy. No additional findings compared to the previous study.",
+    "prediction": "We did a chest scan and compared it to an earlier one. The images are a bit blurry because of breathing movement, but there's a lot of improvement. Only a few faint cloudy areas are left in the lower parts of the lungs. The rest of the lungs look normal. There are no changes in the widened airways in the right lower lung. There's no fluid around the lungs, and no swollen lymph nodes in the chest or armpits. Nothing new was found compared to the last scan.",
+    "target_summary": "A CT scan of the chest was done without using contrast material and was compared to a previous scan from [date]. The scan was a bit affected by the patient's breathing. Compared to the previous scan, there's a lot of improvement, with only very faint hazy areas left in the lower parts of the lungs, which are affected by the breathing. The rest of the lungs look normal. The condition of the widened airways in the right lower lobe hasn't changed. There's no fluid around the lungs. There are no swollen lymph nodes in the chest or armpit areas. There are no new findings compared to the previous scan."
+  },
+  {
+    "radiology_report": "Marked aortic elongation. Cardiomegaly. Right basal infiltrate, clinically compatible with an infectious pneumonia process. Recommend follow-up study after antibiotic treatment.",
+    "prediction": "The main artery from the heart is stretched out. The heart is enlarged. There is an infection in the lower right lung, likely pneumonia. A follow-up check is advised after taking antibiotics.",
+    "target_summary": "Significant stretching of the main blood vessel (aorta) is observed. The heart appears enlarged. There is a patchy area at the bottom of the right lung, which is consistent with an infection like pneumonia. It is suggested to have a follow-up examination after antibiotic therapy."
+  },
+  {
+    "radiology_report": "Bilateral patchy peripheral infiltrates suggestive of COVID-19 pneumonia.",
+    "prediction": "The scan shows areas of infection in both lungs, which could indicate COVID-19 pneumonia.",
+    "target_summary": "Both lungs show scattered patches at the edges that could be signs of pneumonia caused by the COVID-19 virus."
+  },
+  {
+    "radiology_report": "Hiatal hernia is present. No imaging findings suggestive of pneumonia are identified in the study.",
+    "prediction": "You have a hiatal hernia, which is when part of your stomach pushes up into your chest. There are no signs of pneumonia in the images.",
+    "target_summary": "There is a condition called hiatal hernia present. The images do not show any signs of pneumonia."
+  },
+  {
+    "radiology_report": "Increased size of the cardiac silhouette associated with bilateral perihilar interstitial infiltrates, likely left pleural effusion, consider congestive heart failure. Pericardial effusion is also noted.",
+    "prediction": "The heart appears larger than normal, and there are signs of fluid in the lungs, especially around the center. There might be fluid around the left lung and around the heart. These findings suggest possible heart failure.",
+    "target_summary": "The heart appears larger than normal on the image, and there is a possibility of fluid buildup around the heart. This, along with fluid around the lungs and signs of fluid in the lung tissues, suggests that the person might be experiencing heart failure. There is also fluid around the heart itself."
+  },
+  {
+    "radiology_report": "No significant findings.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "There are no important issues found."
+  },
+  {
+    "radiology_report": "The study is suboptimal due to incomplete inclusion of the pulmonary apices. Rotation to the right is noted. Persistent bilateral perihilar interstitial-alveolar infiltrates are observed. The distal end of the SNG is not clearly visualized. Blunting of the left hemidiaphragm is likely related to an associated pleural effusion.",
+    "prediction": "The images aren't perfect because the tops of the lungs aren't fully shown, and the patient was slightly turned to the right. There are ongoing cloudy areas in the middle parts of both lungs. The end of the feeding tube isn't clearly seen. The left side of the diaphragm looks a bit flattened, probably due to fluid around the lung.",
+    "target_summary": "The imaging is not perfect because the top parts of the lungs are not fully shown. The patient seems to have turned to the right. There are ongoing signs of fluid and inflammation around the main airways on both sides. The end of the feeding tube is not clearly seen. The left side of the diaphragm appears flattened, which could be due to fluid around the lungs."
+  },
+  {
+    "radiology_report": "The cardiomediastinal silhouette is at the upper limit of normal. Enlargement of the mediastinum suggests lipomatosis. No clear infiltrative or consolidative image is observed, making proper evaluation impossible. The lateral projection is not feasible due to the patient's inability to raise their arms. Significant atheromatosis and mechanical changes in the dorsal spine are noted.",
+    "prediction": "The heart and central chest area are slightly larger than usual, possibly due to excess fat. We can't clearly see any lung issues because of the image quality. The patient couldn't raise their arms for a side view. There are notable signs of artery hardening and changes in the spine.",
+    "target_summary": "The outline of the heart and middle chest area is at the top of what's considered normal. The middle chest area seems bigger, which could mean a buildup of fat. There's no clear sign of lung infection or pneumonia, making it hard to tell what's going on. The side view can't be done because the patient can't lift their arms. There's also a lot of fatty buildup in the spine and some changes in the bones of the back."
+  },
+  {
+    "radiology_report": "Normal.",
+    "prediction": "Everything looks fine.",
+    "target_summary": "Everything looks normal."
+  },
+  {
+    "radiology_report": "Reason for consultation: Acute bronchitis with no improvement after 20 days of treatment, presenting with minimal bilateral respiratory wheezing. Findings: Bicameral pacemaker. Normal-sized cardiomediastinal silhouette. Prominent right hilum, likely due to suboptimal technique. No pulmonary consolidation observed. No pleural effusion.",
+    "prediction": "Reason for consultation: The patient has had bronchitis for 20 days without getting better and is experiencing slight wheezing in both lungs. Findings: The patient has a pacemaker. The heart and surrounding area look normal in size. The right lung area appears more noticeable, possibly due to how the image was taken. There is no sign of lung infection or fluid around the lungs.",
+    "target_summary": "The patient came in because they have a bad cough called acute bronchitis that hasn't gotten better after 20 days of treatment. They also have a little bit of whistling sounds when they breathe. The test showed that they have a device to help their heart beat properly. The area around the heart looks normal in size. The right side of the lungs looks a bit big, but it might be because the test was done in a not-so-good way. There's no sign of the lungs getting clumped together, which is a bad thing. There's also no extra fluid around the lungs."
+  },
+  {
+    "radiology_report": "Normal findings.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "The results are normal."
+  },
+  {
+    "radiology_report": "No significant pathological findings.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "There are no significant abnormal findings."
+  },
+  {
+    "radiology_report": "The study is within normal limits.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "The examination results are normal."
+  },
+  {
+    "radiology_report": "Cardiomegaly. Blunting of the costophrenic angles. On the lateral projection, a posterobasal area with pleural thickening and a nodular density of 4 cm is observed, which could represent rounded atelectasis, although other causes cannot be ruled out.",
+    "prediction": "The heart appears larger than normal. There is some fluid or thickening at the edges of the lungs where they meet the diaphragm. On the side view, there is a thickened area and a 4 cm lump at the back and bottom of the lung, which might be a collapsed part of the lung, but other possibilities are not excluded.",
+    "target_summary": "The heart appears enlarged. The areas where the lungs meet the diaphragm are less distinct. On the side view, there is a thickening of the lung lining and a round, 4 cm density at the back bottom of the lung, which could be a type of lung collapse, but other causes are also possible."
+  },
+  {
+    "radiology_report": "No significant radiological alterations.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "There are no important changes seen in the x-ray."
+  },
+  {
+    "radiology_report": "Chronic pulmonary changes. Probable elevation of the left hemidiaphragm. No significant findings identified. No objective changes compared to the last study on 22 04 13.",
+    "prediction": "Your lungs show long-term changes, and your left diaphragm might be slightly higher than normal. There are no major issues, and nothing has changed since your last check-up.",
+    "target_summary": "The report shows long-term lung changes. It looks like the left side of the diaphragm, the muscle that separates the chest and abdomen, is higher than normal. There are no important issues found. The results are the same as the last study done on April 22, 2013."
+  },
+  {
+    "radiology_report": "No evidence of metastatic lung disease is observed in the study.",
+    "prediction": "The scan shows no signs of cancer spreading to the lungs.",
+    "target_summary": "The study shows no signs of lung disease that has spread from other parts of the body."
+  },
+  {
+    "radiology_report": "No pulmonary infiltrates or consolidations are observed.",
+    "prediction": "Your lungs look clear and healthy.",
+    "target_summary": "No signs of lung infections or areas of lung tissue that have become solid are seen."
+  },
+  {
+    "radiology_report": "Mild peribronchovascular and perihilar thickening bilaterally. No infiltrates or consolidation observed.",
+    "prediction": "The area around the airways and near the center of both lungs is slightly thicker than usual. There are no signs of infection or fluid buildup.",
+    "target_summary": "Mild thickening around the bronchial blood vessels and near the hilum on both sides. No signs of inflammation or solid areas in the lungs."
+  },
+  {
+    "radiology_report": "Radiographic signs typical of COPD with emphysema. Comparison with the previous study dated 15 11 2011 shows no significant changes.",
+    "prediction": "The X-ray shows signs of a lung condition called COPD with emphysema. There are no major changes compared to the previous X-ray from November 15, 2011.",
+    "target_summary": "The x-ray shows signs of a lung disease called COPD with emphysema. Comparing it to an older x-ray from November 15, 2011, there are no major changes."
+  },
+  {
+    "radiology_report": "No relevant pathological findings.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "There are no significant issues found."
+  },
+  {
+    "radiology_report": "Anteroposterior control radiograph. A comparative visual study with a previous study is performed, showing an interstitial pattern in the left lung base. Involvement of the right upper lobe and mid lung field is identified.",
+    "prediction": "The X-ray shows changes in the lower part of the left lung and also affects the upper and middle parts of the right lung.",
+    "target_summary": "Looking at a front-to-back x-ray image, we compare it with a previous image and see a pattern in the lower part of the left lung that looks like a net. The upper part of the right lung and the middle area of the lungs are also affected."
+  },
+  {
+    "radiology_report": "No significant changes compared to the previous study.",
+    "prediction": "Everything looks the same as before. No major changes.",
+    "target_summary": "There are no major differences compared to the previous examination."
+  },
+  {
+    "radiology_report": "The cardiomediastinal silhouette is normal. No images suggestive of consolidation or pleural effusion are observed.",
+    "prediction": "The heart and surrounding area look normal. There are no signs of lung infection or fluid around the lungs.",
+    "target_summary": "The outline of the heart and the middle part of the chest looks normal. There are no signs of lung thickening or fluid around the lungs."
+  },
+  {
+    "radiology_report": "A 19-year-old patient presents with a 24-hour history of cough and pharyngeal pain. Low-grade fever in the last few hours. No expectoration. Possible undocumented contact 48 hours ago at a school in Valencia. No dyspnea. Sharp chest pain that worsens with coughing. No urinary syndrome. Lives with parents and one sibling. No ageusia or anosmia. Reports diarrhea with liquid stools, no blood, mucus, or pus. Laboratory results show D-dimer of 1.37 and positive PCR for coronavirus. A non-contrast chest CT scan was performed with optimal study quality. Findings: No significant mediastinal, hilar, internal mammary, or axillary lymphadenopathy. Trachea and main bronchi are normal. Aorta and pulmonary artery are of normal caliber. Cardiac chambers, pericardium, and coronary arteries show no significant abnormalities. Lungs: No infiltrates or other parenchymal lesions. Pleura: No pleural effusion or other abnormalities. Chest wall and thoracic cage: No pathological findings. Abdomen and pelvis: Upper abdominal structures partially included in the lower portion of the study show no significant abnormalities. Conclusion: No significant pathological findings.",
+    "prediction": "A 19-year-old has had a cough and sore throat for a day, along with a mild fever. They have sharp chest pain that gets worse when coughing but no trouble breathing. They recently had diarrhea but no other stomach issues. They tested positive for coronavirus. A chest scan showed no problems with the lungs, heart, or other chest areas. Everything looks normal.",
+    "target_summary": "A 19-year-old patient has had a cough and throat pain for a day and a low fever for a few hours. They haven't coughed up anything and might have been in contact with someone at a school in Valencia two days ago. They don't have trouble breathing or chest pain that gets worse when they cough. They live with their family and don't have a loss of taste or smell. They have had diarrhea with watery stools, but no blood, mucus, or pus. Tests show a slightly high D-dimer level and a positive PCR test for coronavirus. A CT scan of the chest without contrast was done, and it was clear. The results show no swollen lymph nodes in the chest, normal airways, and normal blood vessels. The heart and its covering look fine, and there are no signs of lung infections or other lung problems. There is no fluid around the lungs or other issues. The chest wall and ribcage are normal. The upper belly area, which was partly seen in the scan, looks normal. The conclusion is that there are no significant problems found."
+  },
+  {
+    "radiology_report": "The left central line forms a loop in the left axillary region.",
+    "prediction": "The tube in the left armpit area is bent into a loop.",
+    "target_summary": "The left central line has formed a loop in the area under the left arm."
+  },
+  {
+    "radiology_report": "No evident signs of metastatic disease. No alterations at the level of the lung parenchyma.",
+    "prediction": "The scan shows no signs of cancer spread and the lungs look normal.",
+    "target_summary": "There are no clear indications of cancer spreading in the body. The lung tissue appears unchanged."
+  },
+  {
+    "radiology_report": "Unicameral pacemaker with a right ventricular lead. Aortic elongation. Dorsal kyphosis. No significant parenchymal alterations.",
+    "prediction": "The report shows a single-chamber pacemaker with a lead in the right lower heart chamber. The main artery from the heart is slightly longer than usual. There is a slight forward curve in the upper back. There are no major changes in lung tissue.",
+    "target_summary": "The patient has a single-chamber pacemaker with a lead in the right ventricle of the heart. The aorta, the main blood vessel from the heart, is elongated. There is a humpback posture due to curvature of the spine. No significant changes are seen in the lung tissue."
+  },
+  {
+    "radiology_report": "No significant pathological alterations.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "There are no significant issues or abnormalities detected."
+  },
+  {
+    "radiology_report": "Right rib fracture with minimal localized fluid in the right base. Left basal atelectasis.",
+    "prediction": "You have a broken rib on the right side with a small amount of fluid nearby. There's also a slight collapse of a part of your lung on the left side.",
+    "target_summary": "There is a broken rib on the right side with a small amount of fluid in the lower right area of the lung. The lower left part of the lung is also not fully inflated."
+  },
+  {
+    "radiology_report": "Emphysematous chest. Biapical pleuroparenchymal thickening.",
+    "prediction": "The lungs show signs of emphysema, which means there is damage to the air sacs. There is also some thickening at the top parts of the lungs.",
+    "target_summary": "The chest shows signs of emphysema, a lung condition where air gets trapped causing the lungs to overinflate. There is also thickening of the lung tissue at both the top corners near the chest wall."
+  },
+  {
+    "radiology_report": "Pulmonary infiltrate in the right upper lobe with a faint central opacity in the right lower lung field and peripheral opacity at the transition between the left upper and middle lung fields. Given the described radiological findings and the current epidemiological context, it is recommended to rule out COVID-19 infection. Mild to moderate anterior wedging of T6 vertebral body, already present in a previous study dated [date].",
+    "prediction": "The scan shows a cloudy area in the upper part of the right lung and a lighter spot in the lower part of the right lung. There's also a cloudy area between the upper and middle parts of the left lung. These findings suggest checking for COVID-19. Additionally, there is a slight change in the shape of a bone in the upper back, which was already seen in an earlier scan.",
+    "target_summary": "There is a shadow in the upper part of the right lung, and a faint central shadow in the lower part of the right lung, along with a peripheral shadow at the transition between the upper and middle parts of the left lung. Considering the current situation and these findings, it is suggested to check for COVID-19 infection. There is a mild to moderate change in the front part of the T6 vertebrae, which was also seen in a previous study from [date]."
+  },
+  {
+    "radiology_report": "Cardiomegaly. Congested hila. Right lateral pleural thickening. Fissural thickening. Bibasal interstitial pattern suggestive of congestive heart failure. Resolution of the left suprahilar infiltrate previously seen in the study dated December 3, 2012.",
+    "prediction": "The heart is enlarged, and there is fluid buildup around the lung areas. The right side of the chest shows some thickening, and there are signs of fluid in the lung bases, which may indicate heart failure. A previous lung issue seen in 2012 has cleared up.",
+    "target_summary": "The heart is enlarged. Blood vessels at the lung bases are congested. There is thickening of the lining of the chest cavity on the right side. There is also thickening along the lines that separate the lobes of the lungs. The pattern seen at the bottom of both lungs suggests fluid buildup due to heart failure. The previous fluid buildup in the left upper lung, noted in a study from December 3, 2012, has resolved."
+  },
+  {
+    "radiology_report": "Fibrotic tracts in both upper lobes.",
+    "prediction": "There are scar-like tissues in the upper parts of both lungs.",
+    "target_summary": "Scarring is seen in both upper parts of the lungs."
+  },
+  {
+    "radiology_report": "Technique and findings: Faint ground-glass opacities in the periphery of the left hemithorax, rule out COVID-19 pneumonia. No pleural effusion.",
+    "prediction": "The scan shows some slight haziness in the outer area of the left lung, which could suggest COVID-19 pneumonia. There is no fluid buildup around the lungs.",
+    "target_summary": "The imaging technique used showed some faint hazy areas in the left side of the chest, and it's important to rule out whether this is due to COVID-19 pneumonia. There is no fluid buildup around the lungs."
+  },
+  {
+    "radiology_report": "Aspiration pneumonia with asymmetric pulmonary edema.",
+    "prediction": "You have a lung infection from inhaling something, and there is uneven fluid buildup in your lungs.",
+    "target_summary": "Aspiration pneumonia is a type of lung infection that occurs when you inhale foreign substances like food, liquids, or vomit into your lungs. This can lead to inflammation and fluid buildup in the lungs, called pulmonary edema. In this case, the fluid buildup is not the same on both sides of the lungs, which is referred to as asymmetric pulmonary edema."
+  },
+  {
+    "radiology_report": "The endotracheal tube is positioned high, inserted 15 mm. The nasogastric tube is infradiaphragmatic. The umbilical venous catheter projects at D10. A left pneumothorax drainage tube is present, with its tip projecting in the inferior mediastinum. Re-expansion of the pneumothorax is noted.",
+    "prediction": "The breathing tube is placed a bit too high. The feeding tube is in the right place. The tube in the belly button is positioned at the level of the 10th back bone. There is a tube to remove air from around the left lung, and it is positioned correctly. The lung has expanded back to normal.",
+    "target_summary": "The breathing tube is a bit high, going in 15 mm. The stomach tube is below the diaphragm. The umbilical vein catheter is at D10. There's a chest tube on the left side, with its tip in the lower middle chest area. The collapsed lung on the left side is getting better."
+  },
+  {
+    "radiology_report": "The chest is obscured by artifacts.",
+    "prediction": "The chest image is unclear due to interference.",
+    "target_summary": "The chest area is not clear due to some kind of interference or distortion."
+  },
+  {
+    "radiology_report": "Nasogastric tube with distal end not visualized, showing high radiological density. Increased density in the left base, likely related to atelectasis or consolidation, possibly associated with pleural effusion. Improvement in infiltration or atelectasis in the right base.",
+    "prediction": "The feeding tube's end isn't visible on the scan, but it appears dense. There's a denser area in the lower left lung, possibly due to a partial lung collapse or fluid buildup. The right lung's lower area looks better than before.",
+    "target_summary": "The feeding tube going through the nose into the stomach cannot be seen at its end, and it appears very dense on the x-ray. There is increased density on the left side of the chest, possibly due to lung collapse or pneumonia, and this might be related to fluid around the lungs. There is an improvement in the lung collapse or inflammation on the right side of the chest."
+  },
+  {
+    "radiology_report": "No significant radiological abnormalities.",
+    "prediction": "The scan looks normal.",
+    "target_summary": "There are no major issues found in the radiology images."
+  },
+  {
+    "radiology_report": "Blunting of the left costophrenic angle is noted, with no evidence of parenchymal consolidation or other significant findings.",
+    "prediction": "The bottom corner of the left lung looks slightly hazy, but there's no sign of lung infection or anything else concerning.",
+    "target_summary": "The left side of the chest shows a blunted angle at the lung's bottom, but there's no sign of lung tissue thickening or other important issues."
+  },
+  {
+    "radiology_report": "No relevant abnormalities.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "There are no significant issues or abnormalities detected."
+  },
+  {
+    "radiology_report": "No significant radiological alterations.",
+    "prediction": "Everything looks normal on the scan.",
+    "target_summary": "There are no important changes seen in the radiology images."
+  },
+  {
+    "radiology_report": "The hila are enlarged, likely of vascular origin.",
+    "prediction": "The central areas of the lungs appear larger than usual, probably due to blood vessels.",
+    "target_summary": "The areas where the lungs connect to the chest, called the hila, are larger than usual, probably because of increased blood flow."
+  },
+  {
+    "radiology_report": "Other types of viral pneumonia are considered. No changes compared to the previous study from 21 9 2020.",
+    "prediction": "The scan shows no changes since the last one on September 21, 2020. Other viral infections causing pneumonia are being considered.",
+    "target_summary": "We are considering other types of viral pneumonia. There are no changes compared to the previous study from September 21, 2020."
+  },
+  {
+    "radiology_report": "Radiological worsening with increased opacification in both hemithoraces and an increase in the size of the right pleural effusion. Cardiomegaly.",
+    "prediction": "The chest X-ray shows more cloudiness in both lungs and more fluid around the right lung. The heart is also enlarged.",
+    "target_summary": "The radiology images show that the condition has gotten worse, with more cloudiness in both sides of the chest and a larger fluid buildup in the right chest cavity. The heart appears larger than normal."
+  },
+  {
+    "radiology_report": "Central venous access via the right jugular vein with the distal end in the superior vena cava. Nasogastric tube in place. No significant pathological alterations are observed in the remainder of the study.",
+    "prediction": "A tube is placed in a large vein in the neck, ending near the heart. Another tube is in the stomach through the nose. Everything else looks normal.",
+    "target_summary": "A central vein was accessed through the right neck vein, with the end of the tube in the large vein near the heart. A tube is also in place through the nose into the stomach. No significant problems are seen in the rest of the examination."
+  },
+  {
+    "radiology_report": "Findings within normal limits. Secondary changes related to left breast surgery.",
+    "prediction": "Everything looks normal. There are some expected changes from previous surgery on the left breast.",
+    "target_summary": "The results are normal. There are some changes due to surgery on the left breast."
+  },
+  {
+    "radiology_report": "Anterior lobulation of the right hemidiaphragm. Cardiothoracic index is at the upper limit of normal. Pulmonary parenchyma shows no significant alterations.",
+    "prediction": "The front part of the right side of the diaphragm has a slight bulge. The size of the heart compared to the chest is at the high end of normal. The lung tissue looks normal.",
+    "target_summary": "The right side of the diaphragm, which is the muscle that separates the chest from the abdomen, has a normal front part. The size of the heart compared to the chest is at the top of what is considered normal. The lung tissue looks fine with no major issues."
+  },
+  {
+    "radiology_report": "Reason for consultation: cardiac insufficiency. Large left-sided effusion treated. Posteroanterior and lateral chest radiograph. Slight radiological improvement compared to the previous study, with a smaller amount of left pleural effusion and decreased bilateral perihilar alveolar infiltrates.",
+    "prediction": "Reason for consultation: heart problems. A large fluid buildup on the left side was treated. Chest X-rays from the front and side show slight improvement compared to the last check-up. There is less fluid on the left side and fewer cloudy areas in the lungs near the center.",
+    "target_summary": "The reason for the visit is heart failure. A large fluid buildup on the left side has been treated. The chest x-ray from the front and side shows a slight improvement compared to the previous one, with less fluid on the left side of the lungs and less cloudiness around the airways on both sides."
+  },
+  {
+    "radiology_report": "Left lower lobe infiltrate with ipsilateral costophrenic angle blunting, findings suggestive of infectious origin.",
+    "prediction": "The left lower part of the lung shows signs of infection, and there's fluid buildup in the nearby area.",
+    "target_summary": "The left lower part of the lung has a cloudy area, and the angle between the lung and the diaphragm is less sharp than normal. These findings suggest that there might be an infection causing these changes."
+  },
+  {
+    "radiology_report": "PA and lateral X-rays show increased peripheral density in the right lower and middle lung fields, along with multiple bilateral peripheral low-density opacities, consistent with bilateral pneumonia due to SARS-CoV-2, given the current epidemiological context. No pleural effusion is observed. The cardiomediastinal silhouette shows no significant radiological alterations.",
+    "prediction": "The chest X-rays show signs of pneumonia in both lungs, likely due to COVID-19. There is no fluid around the lungs, and the heart and surrounding area look normal.",
+    "target_summary": "The front and side chest X-rays show increased cloudiness in the right lower and middle lung areas, along with several low-density opacities on both sides, suggesting pneumonia caused by the SARS-CoV-2 virus, considering the current outbreak situation. There is no fluid buildup around the lungs. The heart and surrounding area appear normal."
+  },
+  {
+    "radiology_report": "No significant radiographic findings.",
+    "prediction": "The X-ray looks normal.",
+    "target_summary": "There are no significant abnormalities seen on the x-ray."
+  },
+  {
+    "radiology_report": "No findings in the lung parenchyma or cardiomediastinal silhouette.",
+    "prediction": "Your lungs and heart area look normal.",
+    "target_summary": "The lungs and the area around the heart appear normal with no issues detected."
+  },
+  {
+    "radiology_report": "Perihilar infiltrates are observed with increased density at the right base, suggestive of an infectious or inflammatory process. Probable bilateral pleural effusion. Nasogastric tube and endotracheal tube are unchanged compared to the previous study. Central venous catheter via the left subclavian vein into the superior vena cava.",
+    "prediction": "The scan shows some cloudiness near the center of the lungs and a denser area at the bottom of the right lung, which might mean an infection or inflammation. There is likely fluid around both lungs. The feeding tube and breathing tube are in the same position as before. A tube for delivering medicine or fluids is placed in a large vein near the collarbone.",
+    "target_summary": "We can see some cloudiness around the main airways in the lungs, especially on the right side, which might mean there's an infection or inflammation going on. It looks like there might be fluid around both lungs. The tubes that go into the nose and throat to help with eating and breathing haven't changed since the last time we looked. There's also a tube that goes into the chest from the armpit area to help with giving medicine or taking blood."
+  },
+  {
+    "radiology_report": "Cardiothoracic index is increased. No significant findings.",
+    "prediction": "The size of the heart compared to the chest is larger than normal, but there's nothing else of concern.",
+    "target_summary": "The ratio of the heart size to the chest size is higher than normal. There are no major issues found."
+  },
+  {
+    "radiology_report": "Significant radiological signs of typical emphysematous COPD. Bilateral apical pleuroparenchymal tracts. Consider tuberculosis history.",
+    "prediction": "The scan shows clear signs of a lung condition often seen in smokers, where the lungs are damaged and breathing becomes difficult. There are changes at the top of both lungs that could suggest past lung infections, so it's important to consider if there was ever tuberculosis.",
+    "target_summary": "The X-ray shows significant signs of a common type of chronic obstructive pulmonary disease (COPD) called emphysema. There are changes in both the top parts of the lungs near the chest wall, which could suggest a history of tuberculosis."
+  },
+  {
+    "radiology_report": "Radiologic signs of COPD. Bilateral gynecomastia.",
+    "prediction": "The images show signs of a lung condition called COPD, which affects breathing. There is also an enlargement of breast tissue in both sides of the chest.",
+    "target_summary": "The radiology images show signs of chronic obstructive pulmonary disease (COPD), which is a long-term lung condition. Additionally, there is enlargement of the male breast tissue on both sides, a condition known as gynecomastia."
+  },
+  {
+    "radiology_report": "Reason for consultation: dyspnea. Radiological signs of COPD. Cardiomegaly. Aortic arch atheromatosis.",
+    "prediction": "Reason for consultation: shortness of breath. The images show signs of lung disease often linked to smoking. The heart is enlarged, and there is some hardening of the main artery.",
+    "target_summary": "The person came in because they were having trouble breathing. The x-ray shows signs of a lung disease called COPD, an enlarged heart, and fatty deposits in the main blood vessel coming out of the heart."
+  },
+  {
+    "radiology_report": "An urgent thoracic CT angiography was performed. No filling defects are observed in the main, lobar, or segmental pulmonary arteries to suggest pulmonary embolism. No significant changes are noted compared to the previous study from yesterday, 23 03 2020.",
+    "prediction": "We did a detailed chest scan and found no signs of a blood clot in the lungs. Everything looks the same as it did in the scan from yesterday.",
+    "target_summary": "An urgent chest CT scan was done to look for blood clots in the lungs. There are no signs of blood clots in the main, lobar, or segmental blood vessels of the lungs. The results are similar to the previous scan done yesterday, on March 23, 2020."
+  },
+  {
+    "radiology_report": "No image suggestive of infiltrate or consolidation is observed in the study.",
+    "prediction": "The images show no signs of lung infection or fluid buildup.",
+    "target_summary": "The study did not show any signs of lung infection or areas of the lung becoming solid."
+  },
+  {
+    "radiology_report": "Pleural thickening is observed in both pulmonary apices with associated pleuroparenchymal tracts. Radiological signs of COPD. No significant pathological findings are noted.",
+    "prediction": "The top parts of both lungs have some thickening, and there are some changes related to lung tissue. There are signs of a lung condition often linked to smoking, but nothing else concerning was found.",
+    "target_summary": "Thickening of the outer lung lining is seen at the top of both lungs, along with lines connecting to the lung tissue. There are signs of chronic obstructive pulmonary disease (COPD). No significant abnormal findings are observed."
+  },
+  {
+    "radiology_report": "No relevant findings.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "There are no significant issues found."
+  },
+  {
+    "radiology_report": "Technique performed: Non-contrast helical CT of the chest. Transverse reconstructions of 1mm with a lung filter and 1mm with a mediastinal filter. Comparison is made with the study from 01/23/20. Findings: Mediastinum and pulmonary hila: No significant lymphadenopathy. Trachea and main bronchi: No abnormalities. Aorta: Normal size. Pulmonary artery: Normal size (27mm). Cardiac chambers: No significant abnormalities. Coronary arteries: No calcifications. Pericardium: No pericardial effusion or other abnormalities. Sliding hiatal hernia. Lungs: No signs of emphysema. A 6mm nodule in the superior segment of the left lower lobe (image 230) shows no changes since the previous CT and PET-CT. Mosaic perfusion pattern likely due to air trapping. Pleura: No pleural effusion or other abnormalities. Chest wall and thoracic cage: No significant abnormalities. Upper abdominal structures partially included in the lower portion of the study: No significant abnormalities. Conclusion: Mosaic perfusion pattern likely due to air trapping. A 6mm nodule in the superior segment of the left lower lobe shows no changes since the previous study. If stable, the next and final follow-up is advised in 12 months.",
+    "prediction": "The CT scan of your chest shows no major issues. Your heart and main blood vessels look normal. There's a small hernia near your stomach, but it's not a concern right now. Your lungs have a small 6mm spot that hasn't changed since the last scan, which is good. There's a pattern in your lungs that might be due to trapped air, but it's not serious. Everything else looks normal. It's recommended to have one more follow-up scan in a year to ensure everything stays stable.",
+    "target_summary": "A special type of chest x-ray called a CT scan was done without using contrast dye. The scan was taken in two different ways to get a good look at the lungs and the middle part of the chest. The results were compared to a scan done on January 23, 2020. Here's what was found: The middle part of the chest and the areas where the lungs connect to the windpipe look normal. The windpipe and the main airways in the lungs are normal. The large blood vessel that carries blood from the heart (aorta) is the right size. The blood vessel that carries blood to the lungs (pulmonary artery) is also the right size (27mm). The heart's chambers look normal. There's no sign of calcium buildup in the blood vessels that supply the heart. The sac around the heart (pericardium) has no fluid or other problems. There's a small hernia where the food pipe goes through the diaphragm. The lungs show no signs of a condition called emphysema. There's a small spot (6mm nodule) in a part of the left lung that hasn't changed since the last CT and PET-CT scans. The scan shows a pattern that might be due to air getting trapped in the lungs. The membranes around the lungs (pleura) are normal with no fluid or other problems. The chest wall and ribcage look normal. Some parts of the upper belly were seen at the bottom of the scan and they look normal too. The main conclusion is that the pattern seen is likely due to air getting trapped in the lungs. The small spot in the left lung hasn't changed, so if it stays the same, the next and final follow-up is advised in 12 months."
+  },
+  {
+    "radiology_report": "Bilateral peribronchovascular thickening in the hilar region, related to an inflammatory or infectious process. No consolidation is observed.",
+    "prediction": "The scan shows some swelling around the airways in both lungs, likely due to inflammation or infection. There are no signs of lung tissue being filled with fluid or pus.",
+    "target_summary": "Thickening is seen around the airways near the center of the lungs, which could be due to inflammation or infection. There is no sign of pneumonia."
+  },
+  {
+    "radiology_report": "PA chest X-ray. Extensive bilateral interstitial pattern predominantly in both lung bases. Cardiomegaly and hilar thickening, as well as mild blunting of both costophrenic angles. Biventricular pacemaker in place. Radiological worsening compared to the X-ray from [date]. These findings do not rule out COVID pneumonia, although they may also occur in the context of congestive heart failure.",
+    "prediction": "Chest X-ray: There are widespread changes in the lower parts of both lungs. The heart is enlarged, and there is some thickening around the central lung areas. There is slight rounding at the bottom corners of the lungs. A pacemaker is present. The condition looks worse compared to the previous X-ray. These changes could be due to COVID pneumonia or heart failure.",
+    "target_summary": "The front chest X-ray shows a widespread pattern affecting both lungs, mainly at the bottom. The heart appears enlarged, and there's thickening around the lung bases and a mild loss of the normal sharp angle between the lungs and the chest wall. A biventricular pacemaker, a type of heart device, is present. Compared to the X-ray from [date], the situation has worsened. These findings could suggest COVID pneumonia, but they might also be due to heart failure."
+  },
+  {
+    "radiology_report": "Congested hila. Nasogastric tube positioned below the diaphragm. Central venous catheter traversing the right jugular vein with its tip in the superior vena cava. Comparison with the previous study from yesterday shows no significant changes.",
+    "prediction": "The chest area near the lungs looks congested. A feeding tube is correctly placed in the stomach. A central line is properly positioned in a large vein leading to the heart. There are no major changes compared to yesterday's scan.",
+    "target_summary": "The area around the airways in the lungs is congested, which means they are filled with fluid. The feeding tube is placed below the diaphragm, which is the muscle that separates the chest from the abdomen. The central venous catheter, a tube used for medical procedures, is going through the right jugular vein and its tip is in the superior vena cava, a large vein that carries blood to the heart. Compared to the previous study from yesterday, there are no significant changes."
+  },
+  {
+    "radiology_report": "Aortic elongation and elongation of the supra-aortic trunks. Pulmonary parenchyma without significant alterations.",
+    "prediction": "The main artery from the heart and its branches are longer than usual. The lungs look normal.",
+    "target_summary": "The aorta, the main blood vessel coming out of the heart, and the blood vessels above it are stretched out. The lung tissue looks normal without any significant issues."
+  },
+  {
+    "radiology_report": "A non-contrast chest CT was performed and compared with a previous chest CT study from [date] and PET-CT from [date]. There are no changes in the pleural thickening, which measures 6.6 mm in maximum thickness, and the fibrotic pleuroparenchymal tract with a nodular component and peripheral ground-glass opacity. Two nodules measuring 4 and 6 mm are located in the posterior segment of the right upper lobe, which converge and measure 2.0 x 0.6 cm, previously 2.1 x 0.7 cm on PET-CT from [date]. No other nodules or pulmonary consolidations are identified. There is a severe centrilobular emphysema pattern, predominantly in the upper lobes. Laminar atelectasis is noted in the lingula. No pathological-sized axillary, mediastinal, or hilar lymph nodes are observed. There is no pleural or pericardial effusion. The thyroid gland is enlarged with intrathoracic extension, unchanged. The upper abdomen is partially included in the study, with no abnormalities on non-contrast CT. No bone or muscular plane abnormalities are observed. Impression: Mixed pseudonodular opacity in the right upper lobe, which may correspond to lepidic growth adenocarcinoma, with no significant changes in size or appearance since the PET-CT from [date]. Follow-up with CT in 12 months is recommended, with a 3-year follow-up according to the Fleischner Society 2017 guidelines.",
+    "prediction": "We did a chest scan and compared it to previous ones. There are no changes in the thickening of the lung lining or the small lung scar with a cloudy area. Two small lumps in the right upper lung have slightly decreased in size. No new lumps or lung issues were found. There is severe lung damage, mainly in the upper parts. A small area of lung collapse is present. No unusual swelling in the chest lymph nodes was seen. There is no fluid around the lungs or heart. The thyroid gland is still enlarged but hasn't changed. The upper abdomen looks normal. No bone or muscle issues were found. The lumps in the right upper lung might be a type of slow-growing cancer, but they haven't changed much. Another scan in a year is suggested, with regular checks for three years.",
+    "target_summary": "We did a special type of chest X-ray called a non-contrast chest CT and compared it to previous chest CT scans and a PET-CT scan from specific dates. The thickening of the lung covering, which is 6.6 mm at its thickest point, and the scar tissue connecting the lung covering to the lung itself with a small nodule and hazy area at the edges, haven't changed. There are two small lumps in the back part of the right upper lung, one measuring 4 mm and the other 6 mm, which together measure 2.0 x 0.6 cm, previously measured as 2.1 x 0.7 cm on the PET-CT scan from a specific date. No other lumps or areas of lung clumping are seen. There is severe damage to the small air sacs in the lungs, mainly in the upper parts. A thin layer of collapsed lung is noted in a part called the lingula. No swollen lymph nodes in the armpit, chest, or lung area are observed. There is no fluid around the lungs or heart. The thyroid gland is enlarged and extends into the chest, unchanged. The upper belly is partially seen in the study, with no abnormalities on the non-contrast CT. No bone or muscle abnormalities are seen. Conclusion: Mixed nodule-like haziness in the right upper lung, which could be a type of lung cancer that grows along the air sacs, with no significant changes in size or appearance since the PET-CT scan from a specific date. It is recommended to follow up with a CT scan in 12 months, and a 3-year follow-up according to the Fleischner Society 2017 guidelines."
+  },
+  {
+    "radiology_report": "Comparison with the previous study dated May 6 shows resolution of the acute pulmonary edema pattern.",
+    "prediction": "Compared to the previous check-up on May 6, the fluid in the lungs has cleared up.",
+    "target_summary": "Looking at the images from May 6 and comparing them to the current ones, we can see that the severe fluid build-up in the lungs, which was a sign of a serious condition called pulmonary edema, has cleared up."
+  },
+  {
+    "radiology_report": "Calcified granuloma in the middle third of the left hemithorax. The remainder of the study is within normal limits.",
+    "prediction": "There's a small, harmless spot of hardened tissue in the middle part of the left side of the chest. Everything else looks normal.",
+    "target_summary": "A calcified granuloma, which is a type of hardened lump, is found in the middle part of the left side of the chest. The rest of the examination looks normal."
+  },
+  {
+    "radiology_report": "The cardiomediastinal silhouette is normal. No evidence of consolidation or pleural effusion is observed. The chest is emphysematous.",
+    "prediction": "The heart and central chest area look normal. There's no sign of lung infection or fluid around the lungs. However, there are signs of lung damage often seen in smokers.",
+    "target_summary": "The heart and the area around it appear normal. There are no signs of lung infections or fluid around the lungs. The chest shows signs of emphysema, a condition where the air sacs in the lungs are damaged and enlarged."
+  },
+  {
+    "radiology_report": "Central venous catheter with entry via the right jugular vein, distal end in the superior vena cava. Endotracheal tube with tip 2.5 cm above the carina. Diffuse bilateral alveolar involvement with left pleural effusion, showing no significant changes compared to the previous study dated 24 11 2011.",
+    "prediction": "A tube is inserted into a large vein in the neck, ending near the heart. Another tube is placed in the windpipe, positioned just above where the airways split. There is widespread lung involvement on both sides and fluid around the left lung. There are no major changes compared to the previous check-up in 2011.",
+    "target_summary": "A central venous catheter is inserted through the right jugular vein, with its end in the superior vena cava. The endotracheal tube's tip is positioned 2.5 cm above the carina. There is widespread involvement of both lung's alveoli and a left pleural effusion, but no significant changes compared to the previous study from November 24, 2011."
+  },
+  {
+    "radiology_report": "No significant radiological alterations are observed.",
+    "prediction": "Everything looks normal on the scan.",
+    "target_summary": "There are no important changes seen in the x-ray images."
+  },
+  {
+    "radiology_report": "Left subclavian central line with its distal end in the superior vena cava. No evidence of pulmonary parenchymal abnormalities. No changes compared to the previous study with contrast.",
+    "prediction": "The tube placed in the left side of the chest is correctly positioned in a large vein near the heart. The lungs look normal, and there are no changes compared to the last scan with contrast.",
+    "target_summary": "The left subclavian central line is in place with its end in the superior vena cava. There are no signs of lung tissue problems. The findings are the same as the previous study with contrast."
+  },
+  {
+    "radiology_report": "The cardiothoracic index is at the upper limit of normal. Prominent hila, likely of vascular etiology.",
+    "prediction": "The heart and chest size are at the high end of normal. The areas where the blood vessels enter the lungs appear more noticeable, probably due to blood vessels.",
+    "target_summary": "The heart and lung size ratio is at the top of what's considered normal. The areas where the blood vessels enter the lungs are more noticeable, probably because of blood vessel issues."
+  },
+  {
+    "radiology_report": "The trachea is midline. The cardiomediastinal silhouette is normal and unchanged compared to prior examination. The lungs are clear, without evidence of acute infiltrate or effusion. There is no pneumothorax. The visualized bony structures reveal no acute abnormalities. There is hiatal hernia. No acute cardiopulmonary abnormalities.",
+    "prediction": "The windpipe is in the correct position. The heart and surrounding area look normal and haven't changed since the last check. The lungs are clear with no signs of infection or fluid buildup. There's no collapsed lung. Bones appear normal with no recent issues. There is a small part of the stomach pushing up into the chest area. No new heart or lung problems are present.",
+    "target_summary": "The windpipe is in the middle. The area around the heart looks normal and hasn't changed since the last check. The lungs are clear, showing no signs of sudden infection or fluid buildup. There's no air outside the lungs. The visible bones don't show any sudden issues. There's a hernia at the opening where the food pipe goes into the stomach. No sudden heart or lung problems."
+  },
+  {
+    "radiology_report": "Suboptimal study due to non-inclusion of the left costophrenic angle. Congested hila. Mild bilateral perihilar interstitial infiltrates. Infrahilar right interstitial-alveolar infiltrate. The rest shows no significant changes compared to the previous study from yesterday.",
+    "prediction": "The image quality isn't perfect because it didn't capture a specific area of the left lung. There is some congestion in the central lung areas. There are mild changes in both lungs near the center, and a small area of change in the lower right lung. Everything else looks about the same as the previous image from yesterday.",
+    "target_summary": "The x-ray image isn't perfect because it doesn't show the bottom left part of the lungs. The areas where the lungs meet the heart look a bit swollen. There's a bit of fluid around the main airways on both sides. There's also some fluid and inflammation in the lower right part of the lung. Everything else looks the same as the x-ray from yesterday."
+  },
+  {
+    "radiology_report": "Radiologic signs of COPD. Right paratracheal widening suggestive of intrathoracic goiter, with no changes compared to the previous study from October 2016.",
+    "prediction": "The images show signs of a lung condition called COPD. There is also a swelling near the windpipe on the right side, likely due to an enlarged thyroid gland inside the chest. This swelling hasn't changed since the last check in October 2016.",
+    "target_summary": "The imaging shows signs of Chronic Obstructive Pulmonary Disease (COPD). There's an enlargement near the windpipe on the right side that suggests a goiter (enlarged thyroid gland) in the chest, and it hasn't changed since the previous examination in October 2016."
+  },
+  {
+    "radiology_report": "Cardiothoracic findings are of limited pathological significance. Aortic elongation is noted. Calcified granuloma in the left upper lobe. Right diaphragmatic lobulation is observed. No significant radiographic findings are present.",
+    "prediction": "The heart and lung area looks mostly normal. The main artery from the heart is slightly stretched. There's a small, hardened spot in the upper left lung, likely from an old infection. The right side of the breathing muscle has a slight bump. Overall, nothing serious is found.",
+    "target_summary": "The heart and chest area don't show any serious issues. The main blood vessel in the chest is a bit longer than normal. There's a hardened lump in the left upper part of the lung. The muscle under the right lung is a bit irregular. There are no important findings from the x-ray."
+  },
+  {
+    "radiology_report": "Volume loss in the right hemithorax with pleural calcifications and secondary changes suggestive of probable tuberculous origin pachypleuritis. Cardiomegaly. Aortic elongation. Comparison with the previous study dated 11 03 2011 shows no significant changes.",
+    "prediction": "The right side of the chest appears smaller, with some hardened areas on the lung lining, likely due to past tuberculosis infection. The heart is enlarged, and the main artery from the heart is stretched. Compared to the previous scan from March 11, 2011, there are no major changes.",
+    "target_summary": "The right side of the chest has less volume, with calcium deposits on the lung lining and related changes that suggest a likely tuberculosis-related thickening of the lung lining. The heart is enlarged. The main blood vessel is stretched out. Compared to the previous test from November 3, 2011, there are no significant changes."
+  },
+  {
+    "radiology_report": "No foci of pulmonary consolidation or significant pleural effusion are observed. Subtle, nonspecific bibasal pulmonary reticular opacities are noted.",
+    "prediction": "The lungs look mostly clear with no signs of fluid buildup. There are some faint, unclear patterns at the bottom of the lungs, but they aren't specific to any condition.",
+    "target_summary": "There are no areas of the lungs that have become solid or significant fluid buildup around the lungs. However, there are some faint, nonspecific patterns in the lower parts of both lungs that are not clear."
+  },
+  {
+    "radiology_report": "Massive right pleural effusion with a small air collection in the left lateral decubitus position without contralateral displacement of mediastinal structures, suggesting the likely presence of underlying lung collapse.",
+    "prediction": "There's a large amount of fluid around the right lung and a small pocket of air on the left side when lying down. This suggests that part of the lung might have collapsed, but the center of the chest hasn't shifted.",
+    "target_summary": "There is a large amount of fluid on the right side of the chest and a small air pocket on the left side. The structures in the middle of the chest are not pushed to the other side, which suggests that there might be a part of the lung that has collapsed."
+  },
+  {
+    "radiology_report": "No radiographic changes.",
+    "prediction": "Everything looks normal on the X-ray.",
+    "target_summary": "There are no visible changes on the x-ray."
+  },
+  {
+    "radiology_report": "Technique: Thoracoabdominopelvic CT with intravenous contrast. Findings: Compared to the previous study performed approximately 4 months ago on 27 2 2020. Thorax: No pulmonary nodules suspicious for malignancy are observed. No pleural effusion. No hilar or mediastinal lymph nodes of pathological size or appearance are noted. Venous catheter with distal end in the superior vena cava and right atrium. Abdomen and Pelvis: Post-surgical changes in the colonic framework are observed, with colonic anastomosis at the level of the right hypochondrium and flank, and rectosigmoid anastomosis, with a decrease in post-surgical inflammatory changes and no signs of local recurrence. Liver, biliary tract, pancreas, spleen, adrenal glands, kidneys, and minimally distended bladder show no significant abnormalities. The gallbladder is not visualized, likely collapsed or the patient may have undergone cholecystectomy; this should be correlated with the patient's history. No mesenteric, retroperitoneal, iliac, or inguinal lymph nodes of pathological size or appearance are noted. No free intra-abdominal fluid. No bone lesions suspicious for malignancy are observed. Conclusion: No signs of local, nodal, or distant recurrence are observed.",
+    "prediction": "CT scan of the chest, abdomen, and pelvis was done with a special dye to help see details. \n\nChest: Lungs look clear with no suspicious growths. No fluid around the lungs. No swollen lymph nodes. A tube is in place in a large vein near the heart.\n\nAbdomen and Pelvis: Changes from previous surgery on the colon are seen, but healing is progressing well with no signs of cancer returning. Liver, pancreas, spleen, kidneys, and bladder look normal. The gallbladder isn't visible, possibly due to previous removal or it being collapsed; check patient's history for more info. No swollen lymph nodes or fluid in the abdomen. No suspicious bone issues.\n\nConclusion: No signs of cancer returning or spreading.",
+    "target_summary": "We used a special CT scan technique to take pictures of the chest, belly, and pelvis with a contrast dye. Compared to the scan done about 4 months ago on February 27, 2020, here's what we found: In the chest area, there are no suspicious lung lumps that might be cancer. There's no fluid around the lungs. We don't see any swollen lymph nodes in the chest area that look like they could be a problem. There's a tube in a big vein that goes into the upper chest vein and the right side of the heart. In the belly and pelvis area, we can see some changes from past surgeries on the large intestine. There's a connection where the large intestine was joined together in the upper right part of the belly and the side, and another connection in the lower part of the large intestine. The\u624b\u672f\u540e\u7684\u708e\u75c7\u51cf\u5c11\u4e86, and there are no signs of the problem coming back in that area. The liver, bile ducts, pancreas, spleen, adrenal glands, kidneys, and the slightly filled-up bladder all look normal. We can't see the gallbladder, maybe it's collapsed or the patient had it removed; we should check the patient's history. There are no swollen lymph nodes in the belly area that look like they could be a problem. There's no free fluid in the belly. There are no bone problems that look like they could be cancer. Overall, we don't see any signs that the cancer has come back locally, in the lymph nodes, or somewhere else far away."
+  },
+  {
+    "radiology_report": "Thickening of the left fissure with associated pleuroparenchymal tract. No relevant findings.",
+    "prediction": "The scan shows some thickening in a part of the lung on the left side, but it's not considered important.",
+    "target_summary": "The left lung's dividing line has thickened, causing a connection between the lung tissue and the pleura. There are no other significant issues."
+  },
+  {
+    "radiology_report": "Radiologic signs of chronic obstructive pulmonary disease (COPD).",
+    "prediction": "The images show signs of long-term lung disease that makes it hard to breathe.",
+    "target_summary": "The x-ray shows signs of a long-term lung condition called chronic obstructive pulmonary disease (COPD)."
+  },
+  {
+    "radiology_report": "No significant pathological findings. No evidence of parenchymal lung infiltration or consolidation is observed.",
+    "prediction": "The scan shows no signs of lung disease or infection. Everything looks normal.",
+    "target_summary": "There are no significant abnormal findings. There is no sign of lung tissue infiltration or consolidation."
+  },
+  {
+    "radiology_report": "No airspace consolidations.",
+    "prediction": "The lungs are clear with no signs of infection or fluid buildup.",
+    "target_summary": "There are no areas in the lungs where air is trapped or blocked."
+  },
+  {
+    "radiology_report": "Comparison with the previous study dated 07 06 2010. Healed fractures of the left costal arches. Dorsolumbar scoliosis. No significant changes compared to the previous study.",
+    "prediction": "Compared to the previous check-up from June 7, 2010, the broken ribs on the left side have healed. There is a slight curve in the spine in the middle and lower back. No major changes since the last report.",
+    "target_summary": "Comparing to the imaging study done on July 6, 2010, the fractures in the left rib area have healed. There is a curve in the lower back. There are no major changes compared to the previous study."
+  },
+  {
+    "radiology_report": "No significant radiological alterations.",
+    "prediction": "Everything looks normal.",
+    "target_summary": "There are no major changes seen in the x-ray images."
+  },
+  {
+    "radiology_report": "No signs of pneumothorax. Pacemaker with catheter tip in the right ventricle. Radiological signs of COPD. Cardiomegaly.",
+    "prediction": "There is no collapsed lung. A pacemaker is in place with its wire in the heart. There are signs of lung disease, and the heart is enlarged.",
+    "target_summary": "There are no indications of a collapsed lung. There is a pacemaker with a tube ending in the right lower heart chamber. There are X-ray signs of Chronic Obstructive Pulmonary Disease (COPD), which is a group of lung diseases. The heart appears enlarged."
+  },
+  {
+    "radiology_report": "No signs of pulmonary tuberculosis.",
+    "prediction": "Your lungs show no signs of tuberculosis.",
+    "target_summary": "There are no indications of lung infection caused by tuberculosis."
+  },
+  {
+    "radiology_report": "The mediastinum shows no evidence of adenopathy or masses. Cardiomegaly is present, along with coronary and aortic root calcifications. There is bilateral pleural effusion, predominantly on the left, with partial passive atelectasis of the left lower lobe. Subsegmental atelectasis is noted in the left lung base. No nodular lesions are observed in the visualized lung parenchyma. Splenomegaly and free intra-abdominal fluid are present.",
+    "prediction": "The area between the lungs looks normal with no unusual growths. The heart is enlarged, and there are calcium deposits in the heart's arteries and the main artery. There is fluid around both lungs, more on the left side, causing part of the left lung to collapse slightly. No unusual spots are seen in the lungs. The spleen is enlarged, and there is some fluid in the abdomen.",
+    "target_summary": "The area between the lungs, called the mediastinum, doesn't show any swollen lymph nodes or masses. The heart is enlarged, and there are calcium deposits in the heart's blood vessels and the main blood vessel leaving the heart. There is fluid buildup on both sides of the lungs, more on the left, and part of the left lower lung is not fully expanded. A small part of the left lung base is also not fully expanded. No round abnormal growths are seen in the lung tissue. The spleen is enlarged, and there is fluid in the abdominal cavity."
+  },
+  {
+    "radiology_report": "The heart is of normal size, and the cardiomediastinal contours are normal. The lungs are hyperinflated but clear, with no discrete focal consolidation to suggest pneumonia. There is no pleural effusion or pneumothorax. Impression: No radiographic evidence of pneumonia.",
+    "prediction": "The heart looks normal in size and shape. The lungs are a bit over-expanded but clear, with no signs of pneumonia. There is no fluid or air outside the lungs. Overall, there is no evidence of pneumonia.",
+    "target_summary": "The heart is the right size, and everything around the heart looks normal. The lungs are a bit overinflated but clear, with no specific areas of clumping that would suggest pneumonia. There is no fluid around the lungs or air outside the lungs. Conclusion: There is no X-ray sign of pneumonia."
+  },
+  {
+    "radiology_report": "No significant radiological findings.",
+    "prediction": "Everything looks normal on the scan.",
+    "target_summary": "There are no important findings seen on the radiology images."
+  },
+  {
+    "radiology_report": "Posteroanterior chest radiograph without relevant pathological findings.",
+    "prediction": "The chest X-ray looks normal.",
+    "target_summary": "The chest x-ray taken from the back to the front shows no significant abnormal findings."
+  }
+]
