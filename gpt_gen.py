@@ -2,6 +2,17 @@ from openai import OpenAI
 from random import sample
 import os
 import json
+import argparse
+
+def init_parser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", type=str, help="GPT model to be used: [gpt-4o|gpt-4o-mini]", default="gpt-4o-mini")
+ #   parser.add_argument('--few_shot', type=bool, help="Whether to use few shot prompting or not", default="True")
+    parser.add_argument("--output", type=str, help="Output file", default="sample100_result.json")
+    return parser
+
+parser = init_parser()
+args = parser.parse_args()
 
 with open('sample100.json', 'r') as f:
     dataset = json.load(fp=f)
@@ -11,7 +22,7 @@ with open('examples_3shot.json', 'r') as f:
 
 client = OpenAI(api_key=os.environ['OPENAI_KEY'])
 
-model = "gpt-4o"
+model = args.model
 
 data = []
 idx = 1
@@ -36,5 +47,6 @@ for item in dataset:
     print(f"Processing item {idx}/{len(dataset)}")
     idx += 1
 
-with open('sample100_results.json', 'w') as f:
+os.makedirs('./gpt_results', exist_ok=True)
+with open(f"./gpt_results/{args.output}", 'w') as f:
     json.dump(data, fp=f, indent=2)
