@@ -1,8 +1,8 @@
 from evaluate import load
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
-from rouge import Rouge
+from rouge_score.rouge_scorer import RougeScorer
 from bert_score import score as bert_score
-from gritlm_eval import calc_sim_score
+from gritlm_eval import get_gritlm_score
 
 import os
 import json
@@ -12,20 +12,20 @@ import argparse
 
 def init_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--result_file', type=str, default='4o-mini_3shot_result.json')
+    parser.add_argument('--result_file', type=str, default='4o-mini_3shot_sample_results.json')
     parser.add_argument('--output', type=str, default='eval_4o-mini_3shot.json')
     return parser
 
 def calc_rouge(data):
-    rouge = Rouge()
+    scorer = RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
     rouge_1, rouge_l, rouge_2 = [], [], []
 
     for item in data:
-        scores = rouge.get_scores(item['prediction'], item['target_summary'])[0]
+        scores = scorer.score(item['prediction'], item['target_summary'])
 
-        rouge_1.append(scores['rouge-1']['f'])
-        rouge_l.append(scores['rouge-l']['f'])
-        rouge_2.append(scores['rouge-2']['f'])
+        rouge_1.append(scores['rouge1'][2])
+        rouge_l.append(scores['rougeL'][2])
+        rouge_2.append(scores['rouge2'][2])
 
     results = {
         'rouge_1': float(np.mean(rouge_1) * 100),
@@ -78,15 +78,25 @@ def calc_meteor(data):
     return {'meteor': results}
 
 def calc_gritlm(data):
-    return calc_sim_score(data=data, model_name=model_name)
+    return get_gritlm_score(data=data)
+
 
 parser = init_parser()
 args = parser.parse_args()
 
-model_name = '4o-mini' if 'mini' in args.result_file else '4o'
+model_name = args.result_file.split('_sample')[0]
 
-with open(f'./{args.result_file}', 'r') as f:
-    data = json.load(f)
+
+if '4o' in model_name:
+    with open(f'../gpt_results/{args.result_file}', 'r') as f:
+        data = json.load(f)
+else:
+    with open(f'../results/{args.result_file}', 'r') as f:
+        data = json.load(f)
+
+for i in range(len(data)):
+    if data[i]['prediction'].startswith('Translation:'):
+        data[i]['prediction'] = data[i]['prediction'].split('Translation:')[0].strip()
 
 rouge_score = calc_rouge(data)
 bleu_score = calc_bleu(data)
@@ -99,11 +109,11 @@ final = {
     'BLEU': bleu_score,
     'BERTScore': bert,
     'METEOR': meteor_score,
-    'GritLM': gritlm_score
+    'GritLM': gritlm_score,
 }
 
 print(final)
 
-os.makedirs('evaluation_results', exist_ok=True)
-with open(f'./evaluation_results/{args.output}', 'w') as f:
+os.makedirs('../evaluation_results', exist_ok=True)
+with open(f'../evaluation_results/{args.output}', 'w') as f:
     json.dump(final, fp=f, indent=2)

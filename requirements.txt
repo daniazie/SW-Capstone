@@ -1,5 +1,11 @@
 trl
 transformers
+torch
+torchvision
 datasets
+openai
 peft
 openai
+wandb
+tqdm
+bitsandbytes

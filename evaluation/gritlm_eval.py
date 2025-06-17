@@ -6,6 +6,9 @@ import torch
 import argparse
 import numpy as np
 import json
+from math import floor
+
+model = GritLM("GritLM/GritLM-7B", mode='embedding', torch_dtype=torch.bfloat16)
 
 def sentence_split(text):
     return nltk.sent_tokenize(text)
@@ -32,15 +35,12 @@ def get_embeddings(prediction, target_summary, model):
 """with open(f'./gpt_results/{args.input}', 'r') as f:
     data = json.load(f)"""
 
-def calc_sim_score(data, model_name):
+def calc_sim_score(data):
     torch.cuda.empty_cache()
-    model = GritLM("GritLM/GritLM-7B", mode='embedding', torch_dtype=torch.bfloat16)
     torch.cuda.empty_cache()
 
-    theta = 0.65 if 'mini' in model_name else 0.63
-    theta = 0.63 if '3shot' in model_name else 0.60
 
-    proportion = []
+
     similarities = []
     sims = []
     for i, item in enumerate(tqdm(data, desc="Evaluating")):
@@ -62,19 +62,51 @@ def calc_sim_score(data, model_name):
                 sim = 1 - cosine(q_rep[q], d_rep[d])
                 if sim > max_sim:
                     max_sim = sim
-                    pred.append(prediction[q])
-                    target.append(target_summary[d])
-                if sim > theta:
-                    similar_count += 1
+            sims.append({
+                'max_sim': max_sim,
+                'pred': prediction[q],
+                'target': target_summary[d]
+            })
             max_sims.append(float(max_sim))
-
         similarities.append(np.mean(max_sims))
-        proportion.append(similar_count/len(prediction))
+
+    with open('sims.json', 'w') as file:
+        json.dump(sims, fp=file, indent=2)
 
     torch.cuda.empty_cache()
+    sim_score = float(np.mean(similarities))
+    return sim_score
+
+def calc_prop_score(data, sim_score):
+
+    theta = sim_score
+    proportion = []
+    for i, item in enumerate(tqdm(data, desc="Evaluating")):
+        prediction = item['prediction']
+        target_summary = item['target_summary']
+
+        prediction = sentence_split(prediction)
+        target_summary = sentence_split(target_summary)
+
+        similar_count = 0
+        d_rep, q_rep = get_embeddings(prediction=prediction, target_summary=target_summary, model=model)
+
+        for d in range(len(d_rep)):
+            for q in range(len(q_rep)):
+                sim = 1 - cosine(q_rep[q], d_rep[d])
+                if sim > theta:
+                    similar_count += 1
+        proportion.append(similar_count/len(prediction))
+    prop_score = float(np.mean(proportion))
+    return prop_score
+
+def get_gritlm_score(data):
+    sim_score = calc_sim_score(data)
+    prop_score = calc_prop_score(data, sim_score)
+
     gritlm_score = {
-        'similarity_score': float(np.mean(similarities * 100)),
-        'proportion': np.mean(proportion) * 100
+        'similarity_score': sim_score * 100,
+        'proportion_score': prop_score * 100
     }
 
     return gritlm_score

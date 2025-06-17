@@ -10,4 +10,5 @@
 #SBATCH -o ./logs/slurm-%A.out
 #SBATCH -e ./logs/slurm-err-%A.out
 
-python ./evaluation/evaluation.py --result_file 4o_0shot_sample100_results.json --output 4o_0shot_gritlm.json
+python eval.py --result_file 4o-mini_XMS_3shot_result.json --output 4o-mini_XMS_3shot_eval.json
+python eval.py --result_file 4o_XMS_3shot_result.json --output 4o_XMS_3shot_eval.json
