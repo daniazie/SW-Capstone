@@ -299,11 +299,11 @@ setting = args.setting
 
 if 'gpt' not in gen_model:
     if 'qwen3' in gen_model or '3b' in setting or '4b' in setting:
-        model = AutoModelForCausalLM.from_pretrained(f'./models/{gen_model}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation='flash_attention_2')
+        model = AutoModelForCausalLM.from_pretrained(f'../models/{gen_model}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation='flash_attention_2')
         tokenizer = AutoTokenizer.from_pretrained(f'./models/{gen_model}/merged_final', trust_remote_code=True)
     elif '7b' in setting or '8b' in setting:
-        model = AutoModelForCausalLM.from_pretrained(f'./models_7B/{gen_model}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation="flash_attention_2")
-        tokenizer = AutoTokenizer.from_pretrained(f'./models_7B/{gen_model}/merged_final', trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(f'../models_7B/{gen_model}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation="flash_attention_2")
+        tokenizer = AutoTokenizer.from_pretrained(f'../models_7B/{gen_model}/merged_final', trust_remote_code=True)
 
 
 if 'gpt' in args.refinement_model:
@@ -314,11 +314,11 @@ if 'gpt' in args.refinement_model:
 else:
     if 'SFT' in args.refinement_model:
         if 'qwen3' in args.refinement_model or '3b' in setting or '4b' in setting:
-            refine_model = AutoModelForCausalLM.from_pretrained(f'./models/{args.refinement_model}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation='flash_attention_2')
+            refine_model = AutoModelForCausalLM.from_pretrained(f'../models/{args.refinement_model}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation='flash_attention_2')
             refine_tokenizer = AutoTokenizer.from_pretrained(f'./models/{args.refinement_model}/merged_final', trust_remote_code=True)
         elif '7b' in setting or '8b' in setting:
-            refine_model = AutoModelForCausalLM.from_pretrained(f'./models_7B/{args.refinement_model}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation='flash_attention_2')
-            refine_tokenizer = AutoTokenizer.from_pretrained(f'./models_7B/{args.refinement_model}/merged_final', trust_remote_code=True)
+            refine_model = AutoModelForCausalLM.from_pretrained(f'../models_7B/{args.refinement_model}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation='flash_attention_2')
+            refine_tokenizer = AutoTokenizer.from_pretrained(f'../models_7B/{args.refinement_model}/merged_final', trust_remote_code=True)
     else:
         if args.refinement_model == 'qwen-instruct':
             if '3b' in setting:
@@ -594,34 +594,36 @@ for i in tqdm(range(range1, range2), desc="Generating"):
     del document
     
 if args.case_study:
-    with open('first_gen.json', 'w') as file:
+
+    os.makedirs('../case_study', exist_ok=True)
+    with open('../case_study/first_gen.json', 'w') as file:
         json.dump(first_gen, fp=file, indent=2)
 
-    with open('feedback.json', 'w') as file:
+    with open('../case_study/feedback.json', 'w') as file:
         json.dump(feedbacks_list, fp=file, indent=2)
 
 if 'test' in args.dataset:
-    dir = os.listdir('results_test')
-    os.makedirs('./results_test', exist_ok=True)
+    os.makedirs('../results_test', exist_ok=True)
+    dir = os.listdir('../results_test')
     if args.output not in dir:
-        with open(f'./results_test/{args.output}', 'w') as file:
+        with open(f'../results_test/{args.output}', 'w') as file:
             json.dump(refined, fp=file, indent=2)
     else:
-        with open(f'./results_test/{args.output}', 'r') as file:
+        with open(f'../results_test/{args.output}', 'r') as file:
             refined_results = json.load(file)
         refined_results.extend(refined)
 
-        with open(f'./results_test/{args.output}', 'w') as file:
+        with open(f'../results_test/{args.output}', 'w') as file:
             json.dump(refined_results, fp=file, indent=2)
 
 
 
 elif not args.aspect:
-    os.makedirs('./refine_results', exist_ok=True)
-    with open(f"./refine_results/{args.output}", 'w') as f:
+    os.makedirs('../refine_results', exist_ok=True)
+    with open(f"../refine_results/{args.output}", 'w') as f:
         json.dump(refined, fp=f, indent=2)
 else:
-    os.makedirs('refine_results_aspects', exist_ok=True)
-    with open(f"./refine_results/{args.output}", 'w') as f:
+    os.makedirs('../refine_results_aspects', exist_ok=True)
+    with open(f"../refine_results/{args.output}", 'w') as f:
         json.dump(refined, fp=f, indent=2)
 

@@ -112,11 +112,11 @@ model_name = args.model_name
 setting = args.setting
 if 'SFT' in model_name:
     if '3b' or '4b' in setting:
-        model = AutoModelForCausalLM.from_pretrained(f'./models/{model_name}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation='flash_attention_2')
-        tokenizer = AutoTokenizer.from_pretrained(f'./models/{model_name}/merged_final', trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(f'../models/{model_name}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True, attn_implementation='flash_attention_2')
+        tokenizer = AutoTokenizer.from_pretrained(f'../models/{model_name}/merged_final', trust_remote_code=True)
     elif '7b' in setting or '8b' in setting:
-        model = AutoModelForCausalLM.from_pretrained(f'./models_7B/{model_name}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True)
-        tokenizer = AutoTokenizer.from_pretrained(f'./models_7B/{model_name}/merged_final', trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(f'../models_7B/{model_name}/merged_final', device_map='auto', trust_remote_code=True, low_cpu_mem_usage=True, local_files_only=True)
+        tokenizer = AutoTokenizer.from_pretrained(f'../models_7B/{model_name}/merged_final', trust_remote_code=True)
 else:
     if 'qwen' in model_name:
         if '3b' in setting:
@@ -253,12 +253,12 @@ for i, item in enumerate(tqdm(dataset, desc='Predicting...')):
     data.append(dic)
 
 if 'test' in args.dataset:
-    os.makedirs('./results_test', exist_ok=True)
-    with open(f'./results_test/{args.output}', 'w') as file:
+    os.makedirs('../results_test', exist_ok=True)
+    with open(f'../results_test/{args.output}', 'w') as file:
         json.dump(data, fp=file, indent=2)
 else:
-    os.makedirs('./results', exist_ok=True)
-    with open(f'./results/{args.output}', 'w') as f:
+    os.makedirs('../results', exist_ok=True)
+    with open(f'../results/{args.output}', 'w') as f:
         json.dump(data, fp=f, indent=2)
 
     

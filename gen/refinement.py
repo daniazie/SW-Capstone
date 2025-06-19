@@ -17,6 +17,7 @@ import time
 
 def init_parser():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--first_gen_file', type=str, default='first_gen.json')
     parser.add_argument('--refinement_model', type=str, help="Model to use: [llama-sft|llama-instruct-sft|llama-instruct|qwen-sft|qwen-instruct-sft|qwen-instruct]", default='gpt-4o-mini')
     parser.add_argument('--range1', type=int, default=0)
     parser.add_argument('--range2', type=int)
@@ -132,7 +133,7 @@ args = parser.parse_args()
 
 client = OpenAI(api_key=os.environ['OPENAI_KEY'])
 
-with open(f'results_test/250513_qwen3-sft-4B.json', 'r') as f:
+with open(f'../results_test/{args.first_gen_file}', 'r') as f:
     dataset = json.load(f)
 
 
@@ -220,16 +221,16 @@ for i in tqdm(range(args.range1, args.range2), desc="Generating"):
     del input_text
     del document
     
-os.makedirs('./results_test', exist_ok=True)
-dir = os.listdir('results_test')
+os.makedirs('../results_test', exist_ok=True)
+dir = os.listdir('../results_test')
 if args.output not in dir:
-    with open(f'./results_test/{args.output}', 'w') as file:
+    with open(f'../results_test/{args.output}', 'w') as file:
         json.dump(refined, fp=file, indent=2)
 else:
-    with open(f'./results_test/{args.output}', 'r') as file:
+    with open(f'../results_test/{args.output}', 'r') as file:
         refined_results = json.load(file)
     refined_results.extend(refined)
 
-    with open(f'./results_test/{args.output}', 'w') as file:
+    with open(f'../results_test/{args.output}', 'w') as file:
         json.dump(refined_results, fp=file, indent=2)
 

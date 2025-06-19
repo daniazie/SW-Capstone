@@ -114,22 +114,25 @@ for i, item in enumerate(tqdm(dataset, desc='Generating')):
     prediction = completion.choices[0].message.content
     pred = prediction.replace("\n", " ")
     pred = prediction.replace("  ", " ")
-    with open('./results_test/250516_open_rrg.txt', 'a') as file:
-        file.write(pred+'\n')
+
+    if 'test' in args.data:
+        os.makedirs('../results_test', exist_ok=True)
+        with open('../results_test/250516_open_rrg.txt', 'a') as file:
+            file.write(pred+'\n')
+            
     data.append({
         'document': item['radiology_report'],
         'generated_caption': prediction,
         'reference': item['layman_report'],
     })
 
-    with open('count.txt', 'w') as file:
-        file.write(str(i))
 
 if 'test' in args.data:
-    with open(f'./results_test/{args.output}', 'w') as file:
+    os.makedirs('../results_test', exist_ok=True)
+    with open(f'../results_test/{args.output}', 'w') as file:
         json.dump(data, fp=file, indent=2)
     
 else:
-    os.makedirs('./gpt_results', exist_ok=True)
-    with open(f"./gpt_results/{args.output}", 'w') as f:
+    os.makedirs('../gpt_results', exist_ok=True)
+    with open(f"../gpt_results/{args.output}", 'w') as f:
         json.dump(data, fp=f, indent=2)
